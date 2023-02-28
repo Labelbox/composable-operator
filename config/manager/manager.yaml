@@ -31,7 +31,8 @@ spec:
         - /manager
         args:
         - --leader-elect
-        image: controller:latest
+        # image: ghcr.io/composable-operator/composable:0.2.1
+        image: us-docker.pkg.dev/lb-artifacts-testing/container/composable-operator/composable:0.2.2-lb
         name: manager
         securityContext:
           allowPrivilegeEscalation: false
